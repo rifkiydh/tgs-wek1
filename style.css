@@ -1,0 +1,94 @@
+body {
+    background-color: #E3E7EB;
+}
+
+.box-back {
+    width: 700px;
+    margin: 10px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+}
+
+.tmbl-back {
+    padding: 10px 10px 10px 10px;
+    background-color: #FE4E30;
+    border-radius: 5px;
+    color: black;
+
+}
+
+.tmbl-back i {
+    color: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tmbl-back i:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    padding: 10px 100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.container div {
+    margin-top: 15px;
+}
+
+.list-btn div {
+    margin-top: 5px;
+}
+
+.list-btn div button {
+    display: block;
+    border: 1px solid;
+    margin-top: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+#contact {
+    color: #ffffff;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#cv {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.list-icon {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.list-icon div {
+    padding: 0px 10px;
+}
+
+
+.list-icon {
+    display: flex;
+}
+
+.container-img {
+    width: 300px;
+    margin: auto;
+    width:300px;
+    text-align: center;
+    box-shadow: 0px 0px 5px;
+    border-radius: 10px;
+}
+
+img {
+ width: 300px;
+ height: 300px; 
+}
