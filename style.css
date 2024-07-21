@@ -1,94 +1,153 @@
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 body {
-    background-color: #E3E7EB;
+    background-color: #F7F8FA;
 }
 
-.box-back {
-    width: 700px;
-    margin: 10px auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px;
-}
-
-.tmbl-back {
-    padding: 10px 10px 10px 10px;
+nav {
     background-color: #FE4E30;
-    border-radius: 5px;
-    color: black;
-
+    display: flex;
+    justify-content: space-between;
+    padding:  20px;
+    align-items: center;
+    box-shadow: 0px 0px 5px;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    position: sticky;
 }
 
-.tmbl-back i {
+.left ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.left ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul li a:hover {
     color: black;
+}
+
+.right a{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #F7F8FA;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
     transition: transform 0.5s ease-in-out;
 }
 
-.tmbl-back i:hover {
+.right a:hover {
     transform: scale(1.2);
 }
 
+
+
+
+/*  */
+
+
+
 .container {
-    width: 500px;
-    margin: auto;
-    padding: 10px 100px;
-    background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    width: 1010px;
+    margin: 60px auto;
+    padding: 20px;
     border-radius: 10px;
-}
-
-.container div {
-    margin-top: 15px;
-}
-
-.list-btn div {
-    margin-top: 5px;
-}
-
-.list-btn div button {
-    display: block;
-    border: 1px solid;
-    margin-top: 5px;
-    padding: 10px 30px;
-    cursor: pointer;
-}
-
-#contact {
-    color: #ffffff;
-    background-color: black;
-    border-radius: 20px;
-}
-
-#cv {
+    box-shadow: 0px 0px 1px 0px;
     background-color: #ffffff;
-    border-radius: 20px;
-}
-
-.list-icon {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.list-icon div {
-    padding: 0px 10px;
-}
-
-
-.list-icon {
-    display: flex;
-}
-
-.container-img {
-    width: 300px;
-    margin: auto;
-    width:300px;
-    text-align: center;
     box-shadow: 0px 0px 5px;
-    border-radius: 10px;
+}
+
+.hal-1 {
+    padding: 50px 50px 50px 50px;
+}
+
+.paragraf, .tmbl-button, .icon {
+    margin-top: 30px;
+}
+
+.icon, i {
+    transition: transform 0.5s ease-in-out;
+    /* transition: transform 0.2s ease-in-out;: Ini menentukan bahwa transisi (perubahan) pada properti transform akan terjadi dalam waktu 0.2 detik dengan efek percepatan dan perlambatan yang halus (ease-in-out). Ini memberikan efek animasi saat ikon digeser. */
+    margin-left: 20px;
+}
+.icon, i:hover {
+    transform: scale(1.2);
+    /* transform: scale(1.2);: Ini adalah transformasi yang akan diterapkan pada ikon saat digeser. Nilai scale(1.2) akan memperbesar ukuran ikon menjadi 1.2 kali dari ukuran aslinya. */
+}
+.gambar {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin: 70px;
+    box-shadow: 0px 0px 8px;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.gambar:hover {
+    transform: scale(1.2);
 }
 
 img {
- width: 300px;
- height: 300px; 
+    width: 300px;
+    margin: 0;
+}
+
+.nama-besar {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+    padding: 5px 0px;
+}
+
+button, .cv{
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+#contact {
+    background-color: #FE4E30;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 1px #ffffff;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+#cv {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#contact:hover {
+    transform: scale(1.2);
+}
+
+#cv:hover {
+    transform: scale(1.2);
 }
