@@ -6,8 +6,9 @@ function addBlog(event) {
     let tanggalMulai = document.getElementById("startDate").value;
     let tanggalAkhir = document.getElementById("endDate").value;
     let description = document.getElementById("description").value;
-
-
+    let image = document.getElementById("image").files;
+    image = URL.createObjectURL(image[0]);
+    console.log(image)
 
 
 
@@ -16,20 +17,28 @@ function addBlog(event) {
         tanggalMulai : tanggalMulai,
         tanggalAkhir: tanggalAkhir,
         description : description,
+        image
     };
 
     dataBlog.push(blog);
     
     renderBlog();
 
+    document.getElementById("form-reset").reset();
 }
 
 function renderBlog() {
     document.getElementById("projectsContainer").innerHTML = ``;
 
     for (let i = 0; i < dataBlog.length; i++) {
-        document.getElementById("projectsContainer").innerHTML +=`<div style="width: 270px;margin: 5px 10px; box-shadow: 0px 0px 5px; border-radius: 10px;">
-                <img src="./asset/repository-open-graph-template (1).png" alt="" style="width: 230px; border-radius: 10px; margin: 10px 20px ;">
+        document.getElementById("projectsContainer").innerHTML +=`
+            
+            
+            
+            
+            
+             <div style="width: 270px;margin: 5px 10px; box-shadow: 0px 0px 5px; border-radius: 10px;">
+                <img src=" ${dataBlog[i].image} " alt="" style="width: 230px; border-radius: 10px; margin: 10px 20px ;">
                 <h1 style="margin: 10px 20px;"> ${dataBlog[i].name} - ${dataBlog[i].tanggalMulai} </h1>
                 <p style="margin: 10px 20px;"> ${dataBlog[i].tanggalAkhir} </p>
                 <p style="margin: 10px 20px;">  ${dataBlog[i].description}.</p>
@@ -40,10 +49,14 @@ function renderBlog() {
                     <i class="fa-solid fa-t"></i>
                 </div>
                 <div style="display: flex;">
-                    <a href="#" style="background-color: black; color: #ffffff; padding:2px 47px; margin: 0px 12px; text-decoration: none; border-radius: 5px;">edit</a>
+                    <a href="./detail.html" style="background-color: black; color: #ffffff; padding:2px 47px; margin: 0px 12px; text-decoration: none; border-radius: 5px;">edit</a>
                     <a href="#" style="background-color: black; color: #ffffff;padding: 1px 35px; text-decoration: none; border-radius: 5px;">delete</a>
                 </div>
-            </div>`
+            </div> 
+            
+            
+            
+            `
     }
 }
 
